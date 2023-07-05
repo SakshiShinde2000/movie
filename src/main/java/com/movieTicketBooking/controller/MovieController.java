@@ -28,12 +28,12 @@ public class MovieController {
         this.movieService = movieService;
     }
     
-    @GetMapping("/search")
+  /*  @GetMapping("/search")
     public ResponseEntity<List<Movie>> searchMovies(@RequestParam String keyword) {
         List<Movie> movies = movieService.searchMovies(keyword);
         return ResponseEntity.ok(movies);
     }
-    
+    */
     @GetMapping
     public ResponseEntity<List<Movie>> getAllMovies() {
         List<Movie> movies = movieService.getAllMovies();
