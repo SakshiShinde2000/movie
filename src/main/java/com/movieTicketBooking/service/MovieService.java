@@ -10,6 +10,6 @@ public interface MovieService {
     void deleteMovie(int id);
     Movie getMovieById(int id);
     List<Movie> getAllMovies();
-    List<Movie> searchMovies(String keyword);
+ //   List<Movie> searchMovies(String keyword);
 }
 
