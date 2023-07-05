@@ -21,10 +21,10 @@ public class MovieServiceImpl implements MovieService {
         return movieRepository.save(movie);
     }
 
-    @Override
+  /*  @Override
     public List<Movie> searchMovies(String keyword) {
         return movieRepository.searchMovies(keyword);
-    }
+    }*/
     @Override
     public Movie updateMovie(int id, Movie movie) {
         Movie existingMovie = movieRepository.findById(id).orElse(null);
