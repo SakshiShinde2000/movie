@@ -12,6 +12,6 @@ import com.movieTicketBooking.model.Movie;
 @Repository
 public interface MovieRepository extends JpaRepository<Movie, Integer>{
 
-	 @Query("SELECT m FROM Movie m WHERE m.title LIKE %:keyword%")
-	    List<Movie> searchMovies(@Param("keyword") String keyword);
+	// @Query("SELECT m FROM Movie m WHERE m.title LIKE %:keyword%")
+	  //  List<Movie> searchMovies(@Param("keyword") String keyword);
 }
